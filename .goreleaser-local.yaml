@@ -43,7 +43,7 @@ docker_manifests:
     image_templates:
       - "ghcr.io/pixelunioneu/external-dns-bunny-webhook:{{ .Tag }}-amd64"
       - "ghcr.io/pixelunioneu/external-dns-bunny-webhook:{{ .Tag }}-arm64"
-  - name_template: "ghcr.io/pixelunioneu/external-dns-bunny-webhook:{ .Tag }}"
+  - name_template: "ghcr.io/pixelunioneu/external-dns-bunny-webhook:{{ .Tag }}"
     image_templates:
       - "ghcr.io/pixelunioneu/external-dns-bunny-webhook:{{ .Tag }}-amd64"
       - "ghcr.io/pixelunioneu/external-dns-bunny-webhook:{{ .Tag }}-arm64"
