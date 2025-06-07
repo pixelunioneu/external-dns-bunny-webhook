@@ -40,9 +40,9 @@ jobs:
       - name: Run GoReleaser
         uses: goreleaser/goreleaser-action@v6
         with:
-          distribution: goreleaser-local
+          distribution: goreleaser
           version: latest
-          args: release --clean
+          args: release --clean --config .goreleaser-local.yaml
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           # DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
